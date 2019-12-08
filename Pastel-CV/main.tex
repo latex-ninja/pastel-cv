@@ -1,0 +1,162 @@
+% a mashup of hipstercv / timelinecv and awesome-cv.
+% https://www.latextemplates.com/template/awesome-resume-cv
+
+\documentclass[blue]{pastelcv}
+% available options are: turquoise, red, lighthipsterblue, rose, blue, pastelgreen,
+% grey, allblack
+\usepackage[utf8x]{inputenc}
+
+\usepackage[familydefault,light]{Chivo} %% Option 'familydefault' only if the base font of the document is to be sans serif
+\usepackage[default]{raleway}
+\usepackage[T1]{fontenc}
+
+
+\getpagesetup
+
+%------------------------------------------------------------------
+\title{Pastel CV}
+\author{\LaTeX{} Ninja}
+\date{December 2019}
+
+
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\begin{center}
+
+\headername{Jack}{Sparrow}
+
+\jobdescription{Pirate  ~•~ Security Expert}
+
+\adressline{The Black Pearl, Tortuga, The East Indies. The Black Pearl, Tortuga, The East Indies.}
+ 
+\getgreyishblackfont
+
+{
+\small 
+\headersymbols{%
+\faEnvelopeO/The Black Pearl, \faMapMarker/Tortuga, \faPhone/0099/333 5647380, \faAt/\protect\url{jack@sparrow.com}%
+} 
+\faHome~ \protect\url{sparrow.com}
+}
+
+\headerquote{Make something of yourself instead of trying to impress people.}
+
+\end{center}
+
+\vspace{1cm}
+
+%------------------------------------------------
+
+\setupparacol
+\begin{paracol}{2}
+
+
+\fancysection{cvcolour}{Sho}{rt Resumé}
+\begin{tabular}{r| p{\onethirdwidth}}
+    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvaltcolour}}{Finally got the goddamn ship back.\lorem\lorem} \\
+    \cvevent{2016--2017}{Captain of the Black Pearl}{Lead}{Tortuga \color{cvaltcolour}}{Found a secret treasure, lost the ship. \lorem}
+\end{tabular}
+\vspace{1em}
+
+
+\fancysection{cvcolour}{Ski}{lls}
+
+\textsc{\large National}\\[0.5em]
+
+\begin{tabular}{r >{\footnotesize}p{\onefifthwidth} >{\footnotesize\itshape\color{cvcolour}}r}
+    2014 & \textbf{Programming,} C++, C & Tortuga \\
+    2011 & \textbf{Web,} JavaScript & Port Royal \\
+    1690 & \textbf{Spoken,} English, French & London \\ 
+
+\end{tabular}
+\medskip
+
+\textsc{\large International}\\[0.5em]
+
+\begin{tabular}{r >{\footnotesize}p{\onefifthwidth} >{\footnotesize\itshape\color{cvcolour}}r}
+
+    1690 & \textbf{Spoken,} English, French & London \\ 
+    2014 & \textbf{Programming,} C++, C & Tortuga \\
+    2011 & \textbf{Web,} JavaScript & Port Royal \\
+    1690 & \textbf{Spoken,} English, French & London
+\end{tabular}
+\bigskip
+
+
+\fancysection{cvcolour}{Pro}{gramming}
+
+\progressarc{2mm}{cvcolour}{1cm}{cvaltcolour}{\large\bf \textbf{.cpp}}{Object-Oriented \\ Programming}{below}{40}
+\progressarc{2mm}{cvcolour}{1cm}{cvaltcolour}{\large\bf \textbf{.py}}{General \\ Purpose}{below}{70}
+\progressarc{2mm}{cvcolour}{1cm}{cvaltcolour}{\large\bf \textbf{.r}}{Stylo- \\ metry}{below}{55}
+\vspace{1em}
+
+
+\fancysection{cvcolour}{Com}{munication Skills}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{\onethirdwidth}}
+    Friendliness & Very Good \\
+    Parler & Master Level \\
+    Spoken & English, French
+\end{tabular}
+
+
+%-----------------------------------------------------------
+\switchcolumn
+
+
+\fancysection{cvcolour}{Deg}{rees}
+\begin{tabular}{r p{\onethirdwidth}}
+    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{cvaltcolour}}{} \\
+    \cvdegree{1715}{Bucaneering}{M.A.}{London \color{cvaltcolour}}{} \\
+    \cvdegree{1720}{Bucaneering}{B.A.}{London \color{cvaltcolour}}{}
+\end{tabular}
+\vspace{1em}
+
+\fancysection{cvcolour}{Pro}{gramming}
+\begin{minipage}[t]{\paracolwidth}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     html,css &  \barrule{0.4}{0.5em}{cvcolour}\\
+     \LaTeX{} & \barrule{0.55}{0.5em}{cvcolour} \\
+     python & \barrule{0.5}{0.5em}{cvcolour} \\
+     r & \barrule{0.25}{0.5em}{cvcolour} \\
+     javascript & \barrule{0.1}{0.5em}{cvcolour} \\
+\end{tabular}
+\end{minipage}
+\vspace{1em}
+
+\fancysection{cvcolour}{Cer}{tificates \& Grants}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    1708 & Captain's Certificates \\
+    1710 & Travel grant \\
+    1715--1716 & Grant from the Pirate's Company
+\end{tabular}
+\vspace{1em}
+
+\fancysection{cvcolour}{Lan}{guages}
+\begin{tabular}{l | ll}
+\textbf{English} & C2 & {\phantom{x}\footnotesize mother tongue} \\
+\textbf{French} & C2 & \pictofraction{\faCircle}{cvcolour}{3}{black!30}{1}{\tiny} \\
+\textbf{Spanish} & C2 & \pictofraction{\faCircle}{cvcolour}{1}{black!30}{3}{\tiny} \\
+\textbf{Italian} & C2 & \pictofraction{\faCircle}{cvcolour}{3}{black!30}{1}{\tiny}
+\end{tabular}
+\vspace{1em}
+
+\fancysection{cvcolour}{Tal}{ks}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.36\textwidth}}
+    1729 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
+    1720 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720).
+\end{tabular}
+\smallskip
+
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{\onethirdwidth}}
+    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726. \\
+    May 1730 & ``There and Back Again'', at: \emph{Annual LOTR Conference} in Mordor, May 1730.
+\end{tabular}
+
+
+\end{paracol}
+
+\end{document}
